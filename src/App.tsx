@@ -1,24 +1,34 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Class from './components/Class';
+import { Link, Route, Routes, useNavigate} from 'react-router-dom';
+import Gamma from './components/Gamma';
+
+
 
 function App() {
+
+  const navigate = useNavigate();
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className='navbar'>
+        <Link to='/'>
+          <img src='Manufac.png' alt='' className='logo-img' />
+        </Link>
+      </nav>
+      <hr/>
+    <div className='button-set'>
+      <button className='class-set' onClick={() => navigate('/class')}>Class-Table</button>
+      <button className='gamma-set' onClick={() => navigate('/gamma')}>Gamma-Table</button>
+    </div>
+
+    <Routes>
+      <Route path='/class' element= {<Class />} />
+      <Route path='/gamma' element= {<Gamma />} />
+    </Routes>
     </div>
   );
 }

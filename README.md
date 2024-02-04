@@ -39,8 +39,29 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Analysis
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Mean Flavanoids
+
+Calculated the mean of the Flavanoids property for a given array of wine objects. The TypeScript function `mean` demonstrates how to find the mean of this specific property.
+
+### Median Flavanoids
+
+Calculated the median of the Flavanoids property for a given array of wine objects. The TypeScript function `median` demonstrates how to find the median of this specific property.
+
+### Mode Flavanoids
+
+The `mode` function helps find the mode(s) of a given array. It checks for repeated values and returns either a single mode or an array of modes.
+
+### Mean of (Ash * Hue) / Magnesium
+
+The function `mean` calculates the values of the expression `(Ash * Hue) / Magnesium` for each wine object and determines the mean of those values.
+
+### Median of (Ash * Hue) / Magnesium
+
+The function `median` calculates the values of the expression `(Ash * Hue) / Magnesium` for each wine object and determines the median of those values.
+
+### Mode of (Ash * Hue) / Magnesium
+
+The `mode` function helps find the mode(s) of a given array. It checks for repeated values and returns either a single mode or an array of modes.
