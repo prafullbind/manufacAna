@@ -14,10 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
@@ -65,3 +61,5 @@ The function `median` calculates the values of the expression `(Ash * Hue) / Mag
 ### Mode of (Ash * Hue) / Magnesium
 
 The `mode` function helps find the mode(s) of a given array. It checks for repeated values and returns either a single mode or an array of modes.
+
+
