@@ -42,6 +42,7 @@ const Class: React.FC = () => {
     }
 
     function mode(values: any) {
+      
       if (values.length === 0) {
         return 'No mode for an empty array';
       }

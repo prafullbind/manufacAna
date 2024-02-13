@@ -14,7 +14,6 @@ const Gamma: React.FC = () => {
   const [tableData, setTableData] = useState<TableRow[]>([]);
 
     const mean = (values: any) => {
-
       if (values.length === 0) {
         return 0; // Avoid division by zero for an empty array
       }
@@ -117,13 +116,13 @@ const Gamma: React.FC = () => {
                }
                else {
                 let class1 = wineData.filter((ele) => ele.Alcohol === 1);
-                let gammaValues1 = class1.map((ele) => (+ele.Ash * +ele.Hue) / +ele.Magnesium);
+                let gammaValues1 = class1.map((ele) => ((+ele.Ash * +ele.Hue) / +ele.Magnesium).toFixed(3));
                 let class1Result = mode(gammaValues1);
                 let class2 = wineData.filter((ele) => ele.Alcohol === 2);
-                let gammaValues2 = class2.map((ele) => (+ele.Ash * +ele.Hue) / +ele.Magnesium);
+                let gammaValues2 = class2.map((ele) => ((+ele.Ash * +ele.Hue) / +ele.Magnesium).toFixed(3));
                 let class2Result =  mode(gammaValues2);
                 let class3 = wineData.filter((ele) => ele.Alcohol === 3);
-                let gammaValues3 = class3.map((ele) =>(+ele.Ash * +ele.Hue) / +ele.Magnesium);
+                let gammaValues3 = class3.map((ele) =>((+ele.Ash * +ele.Hue) / +ele.Magnesium).toFixed(3));
                 let class3Result = mode(gammaValues3);
                 obj.classs1 = class1Result;
                 obj.classs2 = class2Result;
