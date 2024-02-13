@@ -6,6 +6,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+
+## Screenshots
+
+### Home
+![Home](https://github.com/prafullbind/manufacAna/blob/main/home.PNG?raw=true)
+
+### Class Table
+![Home](https://github.com/prafullbind/manufacAna/blob/main/class.PNG?raw=true)
+
+### Gamma Table
+![Home](https://github.com/prafullbind/manufacAna/blob/main/gamma.PNG?raw=true)
+
+
+
 ### `yarn start`
 
 Runs the app in the development mode.\
